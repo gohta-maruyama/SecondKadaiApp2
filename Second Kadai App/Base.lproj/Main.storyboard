@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Second_Kadai_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UITextField">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -31,11 +31,19 @@
                                     <segue destination="haE-lI-lnn" kind="presentation" identifier="toNext" id="PnQ-nk-t10"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWv-U8-A34">
+                                <rect key="frame" x="103" y="194" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eqc-WN-dLs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="01R-Jz-HSL"/>
+                            <constraint firstItem="wWv-U8-A34" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6da-M7-8Q9"/>
+                            <constraint firstItem="wWv-U8-A34" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="EYm-W8-xv3"/>
                             <constraint firstItem="xmq-m5-1BC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ir1-qz-keK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eqc-WN-dLs" secondAttribute="trailing" constant="30" id="JKG-tt-7r0"/>
                             <constraint firstItem="eqc-WN-dLs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="fBu-rB-bz1"/>
@@ -57,7 +65,7 @@
         <scene sceneID="Elf-eI-Rt9">
             <objects>
                 <viewController id="haE-lI-lnn" customClass="NextViewController" customModule="Second_Kadai_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Lf-fh-Irr" customClass="UITextView">
+                    <view key="view" contentMode="scaleToFill" id="8Lf-fh-Irr" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
